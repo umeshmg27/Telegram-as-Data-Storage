@@ -62,10 +62,7 @@ async def BotInitilisation(f_path : str):
                 if file.endswith(".mp3" ):
                     await global_inst.send_audio(os.path.join(f_path, file))
                     filetranscount += 1
-            
-            print(file)
         except Exception as Error:
-            print(Error)
             res_error.append(file)
             continue
 
