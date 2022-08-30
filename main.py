@@ -1,9 +1,6 @@
-import asyncio
 import telegram
-# from tele_chat_id import chat_id
 
-class Bot_Init:
-    
+class Bot_Init:    
 
     def __init__(self,Bot_Token=None,username=None) :
         self.bot = telegram.Bot(Bot_Token) if Bot_Token != None else "Error"
@@ -48,13 +45,9 @@ class Bot_Init:
 
 
 
-async def main_fun():
-    BOT_Instance = Bot_Init("5695104380:AAEYwBtwWL50nhIILGbexMJATGxaGcKw5wA",'Charlie371')
-    await BOT_Instance.chat_id()
-    await BOT_Instance.send_message("ohh Yeaahh")
-    await BOT_Instance.send_document("./test.csv")
-    await BOT_Instance.send_audio("./Kesariya.mp3")
-    await BOT_Instance.send_video("./Kesariya Status.mp4")
+
+#     BOT_Instance = Bot_Init("5695104380:AAEYwBtwWL50nhIILGbexMJATGxaGcKw5wA",'Charlie371')
+
     
 
 

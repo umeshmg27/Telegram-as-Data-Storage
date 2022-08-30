@@ -1,4 +1,5 @@
 from http.client import HTTPException
+from urllib import response
 from fastapi import FastAPI,status,Response
 from main import Bot_Init
 import telegram
@@ -31,7 +32,7 @@ async def BotInitilisation(bot_token : str,username: str,response: Response):
 
 
 @app.get("/ChatAliveChecker")
-async def BotInitilisation(message : str):
+async def ChatAliveChecker(message : str):
     try:    
         await global_inst.send_message(message)
     except:
@@ -39,7 +40,7 @@ async def BotInitilisation(message : str):
 
 
 @app.post("/exportfolder")
-async def BotInitilisation(f_path : str):
+async def ExportFolder(f_path : str):
     res = []
     res_error = []
     filetranscount = 0
@@ -74,6 +75,7 @@ async def BotInitilisation(f_path : str):
     # try:
     #     await
     # except:
+
 
     
 
