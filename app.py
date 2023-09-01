@@ -10,7 +10,7 @@ app = FastAPI()
 
 @app.get("/me")
 def get_me():
-    return "Hello User"
+    return "Hello User!"
 
 
 
